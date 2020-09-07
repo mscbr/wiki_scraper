@@ -1,0 +1,12 @@
+{
+  "name": "first-scraper",
+  "version": "1.0.0",
+  "description": "web scraper tut",
+  "main": "index.js",
+  "author": "mscbr",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "jsdom": "^16.4.0"
+  }
+}
