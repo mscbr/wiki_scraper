@@ -6,8 +6,7 @@ const { JSDOM } = jsdom;
 const url = "https://en.wikipedia.org/wiki/Ministry_of_Health_(Poland)";
 
 const getNames = () => {
-  console.log("getNames");
-  axios
+  return axios
     .get(url)
     .then((resp) => {
       const dom = new JSDOM(resp.data);
@@ -23,5 +22,5 @@ const getNames = () => {
 };
 
 module.exports = {
-  getNames: () => getNames(),
+  getNames: async () => getNames(),
 };
